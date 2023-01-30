@@ -1,0 +1,19 @@
+.example-spacer {
+    flex: 0.5 1 auto;
+  }
+ .container h4{
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 20px;
+    position: relative;
+    text-align: center;
+}
+.email h4{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    position: relative;
+    display: inline-block;
+    // float: left;
+  margin: 0 20px 0
+}

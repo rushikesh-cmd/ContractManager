@@ -1,0 +1,47 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/contract">
+        <span >Contract Manager</span>
+      </button>
+  
+      <button mat-menu-item >
+        <span >Manage</span>
+      </button>
+    </mat-menu>
+
+    <span class="example-spacer"></span>
+    <span  >Manage</span>
+    <mat-icon style="margin-left: 8px;">settings</mat-icon>   
+
+  </mat-toolbar>
+
+  <div class="container">
+    <h4> E-Mail Notifications </h4>
+    <hr size="5" width="20%" color="Black">
+</div>
+
+<div class="email">
+    <form >
+        <h4>First Reminder</h4>
+        <mat-form-field appearance="outline">
+            <mat-select class="form-control">
+                <mat-option value="01" >20 Days</mat-option>
+                <mat-option value="02" >15 Days</mat-option>
+                <mat-option value="03" >10 Days</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <h4>Second Reminder</h4>
+        <mat-form-field appearance="outline">
+            <mat-select >
+                <mat-option value="01" >20 Days</mat-option>
+                <mat-option value="02" >15 Days</mat-option>
+                <mat-option value="03" >10 Days</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </form>
+</div>
+  

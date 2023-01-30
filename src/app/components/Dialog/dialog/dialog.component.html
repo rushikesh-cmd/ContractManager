@@ -1,0 +1,68 @@
+<h1 mat-dialog-title style="text-align: center;">Contract Form</h1>
+<div mat-dialog-content>
+    <form [formGroup]="contractForm">
+        <mat-form-field appearance="outline" class="mat-form-field">
+            <mat-label>Contract Name</mat-label>
+            <input formControlName="contractName" matInput  placeholder="Contract Name">
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline" class="mat-form-field">
+            <mat-label>Project Name</mat-label>
+            <mat-select formControlName="projectName" placeholder="Category">
+                <mat-option value="iet">IET</mat-option>
+                <mat-option value="zellis">Zellis</mat-option>
+                <mat-option value="bailingu">Baikingu</mat-option>
+            </mat-select>
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> --> 
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline" class="mat-form-field">
+            <mat-label>Manager Name</mat-label>
+            <mat-select formControlName="managerName" placeholder="Manager">
+                <mat-option value="Umesh Vidwans">Umesh Vidwans</mat-option>
+                <mat-option value="Santosh Tikekar">Santosh Tikekar</mat-option>
+                <mat-option value="Sandharbh Sharma">Sandharbh Sharma</mat-option>
+            </mat-select>
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+        </mat-form-field>
+    
+         <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Start date</mat-label>
+            <input formControlName="startDate" matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matIconSuffix [for]="picker">
+              <!-- <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon> -->
+            </mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+          
+          <mat-form-field class="example-full" appearance="outline">
+            <mat-label>End date</mat-label>
+            <input formControlName="endDate" matInput [matDatepicker]="picker1">
+            <mat-datepicker-toggle matIconSuffix [for]="picker1">
+              <!-- <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon> -->
+            </mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="mat-form-field">
+            <mat-label>Resources</mat-label>
+            <input formControlName="resources" matInput  placeholder="Resources">
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="mat-form-field">
+            <mat-label>Status</mat-label>
+            <mat-select formControlName="status" placeholder="Status">
+                <mat-option value="Active">Active</mat-option>
+                <mat-option value="About to Expire">About To Expire</mat-option>
+                <mat-option value="Terminated">Terminated</mat-option>
+            </mat-select>
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="onSubmit()">{{actionBtn}}</button>
+</div>

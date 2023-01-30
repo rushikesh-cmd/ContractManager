@@ -1,0 +1,44 @@
+{
+  "contractLists": [
+    {
+      "contractName": "Term 1",
+      "projectName": "iet",
+      "managerName": "Santosh Tikekar",
+      "startDate": "2023-01-27T18:30:00.000Z",
+      "endDate": "2023-01-30T18:30:00.000Z",
+      "resources": "10",
+      "status": "Active",
+      "id": 1
+    },
+    {
+      "contractName": "sdfs",
+      "projectName": "bailingu",
+      "managerName": "Sandharbh Sharma",
+      "startDate": "2023-01-12T18:30:00.000Z",
+      "endDate": "2023-01-01T18:30:00.000Z",
+      "resources": "5",
+      "status": "Terminated",
+      "id": 2
+    },
+    {
+      "contractName": "Term 4",
+      "projectName": "iet",
+      "managerName": "Santosh Tikekar",
+      "startDate": "2023-01-30T18:30:00.000Z",
+      "endDate": "2023-02-22T18:30:00.000Z",
+      "resources": "15",
+      "status": "About to Expire",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
